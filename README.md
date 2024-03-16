@@ -1,6 +1,6 @@
 # beatbox
   
-![alt text](https://github.com/dakotalrubin/beatbox/blob/main/images/screenshot.png?raw=true)  
+![alt text](https://github.com/vmaher14/BeatBox/blob/main/images/screenshot.png?raw=true)  
   
 ## Description
   

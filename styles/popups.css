@@ -1,0 +1,76 @@
+/* Styles the instrument channel popup windows */
+.popup {
+    width: 400px;
+    background-color: #C9B7FF;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 16px 8px;
+    color: #333333;
+    visibility: hidden;
+    transition: transform 0.15s, center 0.15s;
+}
+
+/* Styles the instrument channel popup window's label text */
+.popup h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 30px 0 10px;
+}
+
+/* Styles the instrument channel popup window's text box */
+.popup-text {
+    font-size: 42px;
+    text-align: center;
+    width: 50%;
+    height: 80px;
+    margin-top: 16px;
+}
+
+/* Styles the instrument channel popup window's OK and Cancel buttons */
+.ok-cancel-buttons {
+    display: flex;
+}
+
+/* Styles the instrument channel popup window's buttons */
+.popup button {
+    width: 50%;
+    height: 72px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    margin-left: 12px;
+    color: #FFFFFF;
+    border: 0px;
+    font-size: 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles the instrument channel popup window's text field */
+.popup input {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup input:focus {background-color: #7621C5;}
+.popup input:active {background-color: #7621C5; transform: translateY(1px);}
+
+/* Styles the instrument channel popup window's OK button */
+.ok {background-color: #21D375;}
+.ok:hover {background-color: #23E27C;}
+.ok:active {background-color: #23E27C; transform: translateY(1px);}
+
+/* Styles the instrument channel popup window's Cancel button */
+.cancel {background-color: #EA3B52;}
+.cancel:hover {background-color: #FB4D64;}
+.cancel:active {background-color: #FB4D64; transform: translateY(1px);}
+
+/* Plays an instrument channel popup window animation */
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}

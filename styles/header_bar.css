@@ -1,0 +1,115 @@
+/* Just importing a cool font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Applies to everything as a default! */
+body {
+    display: flex; /* This command enables all Flexbox commands when you need them! */
+    flex-direction: column; /* Arranges header and instrument containers in a column */
+    font-family: Roboto, sans-serif; /* Imported font from above, else use safe font */
+    background-color: #242526;
+    color: #F9FAF8;
+    margin: 0px; /* Don't need space around borders by default */
+    min-height: 100vh; /* Sets the min height of the page to equal the screen size */
+}
+
+/* Default button styling (for buttons in general) */
+button, input {
+    width: 110px; /* Default button sizing */
+    height: 82px;
+    background-color: #551ABB;
+    color: #FFFFFF;
+
+    /* Removes ugly default button border */
+    /* Buttons are clickable, but no visual feedback! */
+    border: 0px;
+
+    border-radius: 16px; /* Default edge roundness */
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Controls cursor appearance upon hovering over a button */
+button:hover {
+    cursor: pointer;
+}
+
+/* Styles the row of icons at the top of the screen */
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Styles the dummy header div */
+.header-dummy {width: 244px;}
+
+/* Styles all header control buttons */
+.header-tempo, .header-play, .header-stop, .header-download {
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    font-size: 42px;
+    vertical-align: top;
+}
+
+/* Styles header-tempo button sizing so it's consistent with other header buttons */
+.header-tempo {
+    height: 80px;
+    text-align: center;
+}
+
+/* Adds animation to the header-play button */
+.header-play:hover {background-color: #7621C5;}
+.header-play:active {
+    background-color: #7621C5;
+    transform: translateY(1px);
+}
+
+/* Adds animation to the header-stop button */
+.header-stop:hover {background-color: #7621C5;}
+.header-stop:active {
+    background-color: #7621C5;
+    transform: translateY(1px);
+}
+
+/* Adds animation to the header-download button */
+.header-download:hover {background-color: #7621C5;}
+.header-download:active {
+    background-color: #7621C5;
+    transform: translateY(1px);
+}
+
+/* Styles the header snapshot section */
+.header-snapshots {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-save-snapshot, .header-load-snapshot {
+    border-radius: 8px;
+    background-color: #EC168D;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    height: 36px;
+    width: 120px;
+    position: relative;
+    left: -20px;
+}
+.header-save-snapshot {margin-right: 4px;}
+.header-load-snapshot {margin-left: 4px;}
+
+.header-save-snapshot:hover, .header-load-snapshot:hover {background-color: #FC517F;}
+.header-save-snapshot:active, .header-load-snapshot:active {
+    background-color: #FC517F;
+    transform: translateY(1px);
+}
+
+/* Removes outline highlighting on text boxes */
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
